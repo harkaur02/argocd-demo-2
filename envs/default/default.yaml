@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: argocd
-    server: http://kubernetes.default.svc
+    server: https://kubernetes.default.svc
   project: default
   source:
     directory:
@@ -20,4 +20,3 @@ spec:
       selfHeal: true
     syncOptions:
       -CreateNamespace=true
-      
